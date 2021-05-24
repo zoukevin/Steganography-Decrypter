@@ -25,7 +25,6 @@ for i in range(len(hexList)):
 msgLength = rgbVal[0:33]
 msgLength = msgLength[::-1]
 msgLength = int(msgLength, 2)
-print("The length of the message is: " + str(msgLength))
 
 #Calculate the message from here
 msgString = (rgbVal[32:])
@@ -50,5 +49,6 @@ for letter in finalMessage:
         checkCount += 1
 percentage = checkCount/len(finalMessage) * 100
 
+print("The length of the message is: " + str(msgLength))
 print("The final message is: " + finalMessage)
 print("The percentage of total possible values containing the message is: " + str(round(percentage, 2))+ "%")
